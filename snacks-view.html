@@ -1,0 +1,16 @@
+<h3>Vote for snack!</h3>
+<table class="table table-striped">
+    <thead>
+        <th>Name of Snack</th>
+        <th>Total Votes</th>
+        <th>Vote here</th>
+    </thead>
+    <tr ng-repeat="snack in mainVm.snacks | orderBy: mainVm.sortSnack.sortBy: mainVm.sortSnack.sortOrder">
+        <td>{{snack.snack}}</td>
+        <td>{{snack.votes}}</td>
+
+        <td>
+            <i ng-click="mainVm.voteSnack(snack.id)" class=" glyphicon glyphicon-ok "></i></td>
+    </tr>
+
+</table>

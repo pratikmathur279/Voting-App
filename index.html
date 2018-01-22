@@ -1,0 +1,40 @@
+<html lang="en-us" ng-app="votingApp">
+
+<head>
+    <title>Voting App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+
+</head>
+
+<body>
+    <div ng-controller="MainController as mainVm">
+        <h1>{{mainVm.title}}</h1><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="form-group">
+                    <label>Enter name : </label>
+                    <input type="text" id="name" ng-model="mainVm.name">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div ng-include="'snacks-view.html'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.angularjs.org/1.6.6/angular.js "></script>
+    <script src="https://code.angularjs.org/1.6.6/angular-resource.js "></script>
+    <script src="https://code.angularjs.org/1.6.6/angular-route.min.js"></script>
+    <script src="./client/angular.module.js "></script>
+    <script src="./client/main.controller.js "></script>
+    <script src="./client/snacks.service.js "></script>
+</body>
+
+</html>

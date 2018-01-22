@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+.col-sm-6 {
+    text-align: center;
+    table-layout: auto
+}
+
+table {
+    text-align: auto;
+}
